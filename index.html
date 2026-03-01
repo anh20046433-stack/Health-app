@@ -1,38 +1,98 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Medicine Reminder AI</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background: #f4f6f9;
-        }
-        .btn {
-            display: inline-block;
-            padding: 15px 25px;
-            background: #2d89ef;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 18px;
-        }
-        .btn:hover {
-            background: #1b5fbd;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Scale</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+.container{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    padding:60px 50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+h1{
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:15px;
+    letter-spacing:2px;
+}
+
+p{
+    font-size:18px;
+    opacity:0.85;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 40px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    text-decoration:none;
+    background: linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    transition:0.4s;
+    box-shadow:0 10px 25px rgba(0,114,255,0.5);
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 20px 35px rgba(0,114,255,0.8);
+}
+
+.footer{
+    margin-top:40px;
+    font-size:14px;
+    opacity:0.6;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
 </head>
+
 <body>
 
+<div class="container">
     <h1>SMART SCALE</h1>
-    <p>Ứng dụng đo chỉ số sức khỏe của bạn.</p>
+    <p>Ứng dụng đo và quản lý chỉ số sức khỏe thông minh</p>
 
-    <a href="https://github.com/anh20046433-stack/Health-app/releases/download/v1.0/smart_scale.exe" 
+    <a href="https://github.com/anh20046433-stack/Health-app/releases/download/v1.0/smart_scale.exe"
        class="btn">
-       ⬇ Tải Ngay
+       ⬇ TẢI ỨNG DỤNG NGAY
     </a>
+
+    <div class="footer">
+        Version 1.0 • Phát hành trên GitHub
+    </div>
+</div>
 
 </body>
 </html>
